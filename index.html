@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de formulaire avec js</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" async ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 id="txt">Créer un compte</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control ">
+                <label for="">Nom d'utilisateur</label>
+                <input type="text" id="username" placeholder="Saisir Nom">
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control ">
+                <label for="">Email</label>
+                <input type="email" id="email" placeholder="Saisir adresse mail">
+
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="">Mot de passe</label>
+                <input type="password" id="password" placeholder="Saisir mot de passe">
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="">Confirmation du mot de passe</label>
+                <input type="password" id="password2" placeholder="Re-saisir mot de passe">
+                <small>Message d'erreur</small>
+            </div>
+            <button type="submit"> S'inscrire</button>
+        </form>
+    </div>
+</body>
+</html>
