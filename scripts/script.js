@@ -29,7 +29,7 @@ function form_verify() {
     }else{
         let letterNum = userValue.length;
         if (letterNum < 4) {
-            let message ="Username doit avoir au moins 4 caractères";
+            let message ="Username doit avoir au moins 2 caractères";
             setError2(username,message)
         } else {
             setSuccess2();
@@ -104,7 +104,7 @@ function email_verify(email) {
     * r_rona.22-t@gmail.com
         /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
     */
-    return /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/.test(email);
+    return /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,2}$/.test(email);
 }
 function password_verify(passeword) {
     return /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,12}$/.test(passeword);
